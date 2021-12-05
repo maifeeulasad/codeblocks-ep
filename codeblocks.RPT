@@ -1,0 +1,495 @@
+-------------------
+
+Error occured on Friday, February 4, 2011 at 10:22:41.
+
+J:\apps\Codeblocks\codeblocks.exe caused an Access Violation at location 617c7803 in module J:\apps\Codeblocks\codeblocks.dll Reading from location 000000ee.
+
+Registers:
+eax=000000ee ebx=ffffff83 ecx=ffffff83 edx=00000000 esi=00000066 edi=01952e00
+eip=617c7803 esp=0023fa28 ebp=0023fa50 iopl=0         nv up ei pl nz na po nc
+cs=001b  ss=0023  ds=0023  es=0023  fs=003b  gs=0000             efl=00010206
+
+Call stack:
+617C7803  J:\apps\Codeblocks\codeblocks.dll:617C7803  _ZN13cbAuiNotebook12RestoreFocusEv
+617C75A3  J:\apps\Codeblocks\codeblocks.dll:617C75A3  _ZN13cbAuiNotebook19OnDwellTimerTriggerER12wxTimerEvent
+62782F49  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:62782F49  _ZN12wxEvtHandler21ProcessEventIfMatchesERK21wxEventTableEntryBasePS_R7wxEvent
+62783090  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:62783090  _ZN12wxEvtHandler23SearchDynamicEventTableER7wxEvent
+62784A77  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:62784A77  _ZN12wxEvtHandler12ProcessEventER7wxEvent
+62892FEB  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:62892FEB  _ZN11wxTimerBase6NotifyEv
+627C8830  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:627C8830  _ZN7wxTimer4InitEv
+7E418734  C:\WINDOWS\system32\USER32.dll:7E418734  GetDC
+7E418816  C:\WINDOWS\system32\USER32.dll:7E418816  GetDC
+7E4189CD  C:\WINDOWS\system32\USER32.dll:7E4189CD  GetWindowLongW
+7E418A10  C:\WINDOWS\system32\USER32.dll:7E418A10  DispatchMessageW
+7E4274FF  C:\WINDOWS\system32\USER32.dll:7E4274FF  IsDialogMessageW
+627B67C1  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:627B67C1  _ZN11wxEventLoop17PreProcessMessageEP6tagMSG
+627B68B9  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:627B68B9  _ZN11wxEventLoop14ProcessMessageEP6tagMSG
+627B657C  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:627B657C  _ZN11wxEventLoop8DispatchEv
+6284AC6E  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:6284AC6E  _ZN17wxEventLoopManual3RunEv
+6282A0EB  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:6282A0EB  _ZN9wxAppBase8MainLoopEv
+0040457C  J:\apps\Codeblocks\codeblocks.exe:0040457C
+62733B91  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:62733B91  _Z12wxInitializeiPPw
+6278A917  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:6278A917  _Z7wxEntryP11HINSTANCE__S0_Pci
+00401ADB  J:\apps\Codeblocks\codeblocks.exe:00401ADB
+004564D6  J:\apps\Codeblocks\codeblocks.exe:004564D6
+004010B6  J:\apps\Codeblocks\codeblocks.exe:004010B6
+00401128  J:\apps\Codeblocks\codeblocks.exe:00401128
+7C817077  C:\WINDOWS\system32\kernel32.dll:7C817077  RegisterWaitForInputIdle
+
+
+-------------------
+
+Error occured on Saturday, February 5, 2011 at 19:59:13.
+
+J:\apps\Codeblocks\codeblocks.exe caused an Access Violation at location 617c78d7 in module J:\apps\Codeblocks\codeblocks.dll Reading from location 5f38753a.
+
+Registers:
+eax=5f38753a ebx=ffffff61 ecx=ffffff61 edx=00000000 esi=0000006c edi=01953be8
+eip=617c78d7 esp=0023fa28 ebp=0023fa50 iopl=0         nv up ei pl nz ac po nc
+cs=001b  ss=0023  ds=0023  es=0023  fs=003b  gs=0000             efl=00010216
+
+Call stack:
+617C78D7  J:\apps\Codeblocks\codeblocks.dll:617C78D7  _ZN13cbAuiNotebook12RestoreFocusEv
+617C7660  J:\apps\Codeblocks\codeblocks.dll:617C7660  _ZN13cbAuiNotebook19OnDwellTimerTriggerER12wxTimerEvent
+62782F49  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:62782F49  _ZN12wxEvtHandler21ProcessEventIfMatchesERK21wxEventTableEntryBasePS_R7wxEvent
+62783090  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:62783090  _ZN12wxEvtHandler23SearchDynamicEventTableER7wxEvent
+62784A77  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:62784A77  _ZN12wxEvtHandler12ProcessEventER7wxEvent
+62892FEB  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:62892FEB  _ZN11wxTimerBase6NotifyEv
+627C8830  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:627C8830  _ZN7wxTimer4InitEv
+7E418734  C:\WINDOWS\system32\USER32.dll:7E418734  GetDC
+7E418816  C:\WINDOWS\system32\USER32.dll:7E418816  GetDC
+7E4189CD  C:\WINDOWS\system32\USER32.dll:7E4189CD  GetWindowLongW
+7E418A10  C:\WINDOWS\system32\USER32.dll:7E418A10  DispatchMessageW
+7E4274FF  C:\WINDOWS\system32\USER32.dll:7E4274FF  IsDialogMessageW
+627B67C1  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:627B67C1  _ZN11wxEventLoop17PreProcessMessageEP6tagMSG
+627B68B9  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:627B68B9  _ZN11wxEventLoop14ProcessMessageEP6tagMSG
+627B657C  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:627B657C  _ZN11wxEventLoop8DispatchEv
+6284AC6E  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:6284AC6E  _ZN17wxEventLoopManual3RunEv
+6282A0EB  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:6282A0EB  _ZN9wxAppBase8MainLoopEv
+004045FC  J:\apps\Codeblocks\codeblocks.exe:004045FC
+62733B91  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:62733B91  _Z12wxInitializeiPPw
+6278A917  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:6278A917  _Z7wxEntryP11HINSTANCE__S0_Pci
+00401B09  J:\apps\Codeblocks\codeblocks.exe:00401B09
+004577A6  J:\apps\Codeblocks\codeblocks.exe:004577A6
+004010B6  J:\apps\Codeblocks\codeblocks.exe:004010B6
+00401128  J:\apps\Codeblocks\codeblocks.exe:00401128
+7C817077  C:\WINDOWS\system32\kernel32.dll:7C817077  RegisterWaitForInputIdle
+
+
+-------------------
+
+Error occured on Monday, February 7, 2011 at 22:20:58.
+
+J:\apps\Codeblocks\codeblocks.exe caused an Access Violation at location 629caf06 in module J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll Reading from location 00000062.
+
+Registers:
+eax=00000000 ebx=00000062 ecx=ff0c0000 edx=00000000 esi=62d1f374 edi=00c21f10
+eip=629caf06 esp=0023ee3c ebp=0023ee44 iopl=0         nv up ei pl zr na po nc
+cs=001b  ss=0023  ds=0023  es=0023  fs=003b  gs=0000             efl=00010246
+
+Call stack:
+629CAF06  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:629CAF06  _ZNK17wxAuiTabContainer13GetActivePageEv
+617C8101  J:\apps\Codeblocks\codeblocks.dll:617C8101  _ZN13cbAuiNotebook17MinimizeFreeSpaceEP12wxAuiTabCtrl
+617C8090  J:\apps\Codeblocks\codeblocks.dll:617C8090  _ZN13cbAuiNotebook17MinimizeFreeSpaceEv
+00428F3E  J:\apps\Codeblocks\codeblocks.exe:00428F3E
+00428B76  J:\apps\Codeblocks\codeblocks.exe:00428B76
+0042E5E6  J:\apps\Codeblocks\codeblocks.exe:0042E5E6
+0042ED00  J:\apps\Codeblocks\codeblocks.exe:0042ED00
+0042EDB9  J:\apps\Codeblocks\codeblocks.exe:0042EDB9
+62782F49  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:62782F49  _ZN12wxEvtHandler21ProcessEventIfMatchesERK21wxEventTableEntryBasePS_R7wxEvent
+627849D1  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:627849D1  _ZN16wxEventHashTable11HandleEventER7wxEventP12wxEvtHandler
+62784AA8  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:62784AA8  _ZN12wxEvtHandler12ProcessEventER7wxEvent
+62784A3D  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:62784A3D  _ZN12wxEvtHandler12ProcessEventER7wxEvent
+62784A3D  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:62784A3D  _ZN12wxEvtHandler12ProcessEventER7wxEvent
+62784A3D  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:62784A3D  _ZN12wxEvtHandler12ProcessEventER7wxEvent
+62784A3D  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:62784A3D  _ZN12wxEvtHandler12ProcessEventER7wxEvent
+62784A3D  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:62784A3D  _ZN12wxEvtHandler12ProcessEventER7wxEvent
+62784A3D  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:62784A3D  _ZN12wxEvtHandler12ProcessEventER7wxEvent
+62784A3D  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:62784A3D  _ZN12wxEvtHandler12ProcessEventER7wxEvent
+62784A3D  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:62784A3D  _ZN12wxEvtHandler12ProcessEventER7wxEvent
+62784A3D  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:62784A3D  _ZN12wxEvtHandler12ProcessEventER7wxEvent
+62784A3D  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:62784A3D  _ZN12wxEvtHandler12ProcessEventER7wxEvent
+62784A3D  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:62784A3D  _ZN12wxEvtHandler12ProcessEventER7wxEvent
+62784A3D  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:62784A3D  _ZN12wxEvtHandler12ProcessEventER7wxEvent
+62784A3D  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:62784A3D  _ZN12wxEvtHandler12ProcessEventER7wxEvent
+62784A3D  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:62784A3D  _ZN12wxEvtHandler12ProcessEventER7wxEvent
+62784A3D  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:62784A3D  _ZN12wxEvtHandler12ProcessEventER7wxEvent
+62784A3D  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:62784A3D  _ZN12wxEvtHandler12ProcessEventER7wxEvent
+62784A3D  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:62784A3D  _ZN12wxEvtHandler12ProcessEventER7wxEvent
+62784A3D  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:62784A3D  _ZN12wxEvtHandler12ProcessEventER7wxEvent
+62784A3D  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:62784A3D  _ZN12wxEvtHandler12ProcessEventER7wxEvent
+62784A3D  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:62784A3D  _ZN12wxEvtHandler12ProcessEventER7wxEvent
+62784A3D  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:62784A3D  _ZN12wxEvtHandler12ProcessEventER7wxEvent
+62784A3D  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:62784A3D  _ZN12wxEvtHandler12ProcessEventER7wxEvent
+62784A3D  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:62784A3D  _ZN12wxEvtHandler12ProcessEventER7wxEvent
+62784A3D  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:62784A3D  _ZN12wxEvtHandler12ProcessEventER7wxEvent
+62784A3D  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:62784A3D  _ZN12wxEvtHandler12ProcessEventER7wxEvent
+62784A3D  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:62784A3D  _ZN12wxEvtHandler12ProcessEventER7wxEvent
+62784A3D  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:62784A3D  _ZN12wxEvtHandler12ProcessEventER7wxEvent
+62784A3D  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:62784A3D  _ZN12wxEvtHandler12ProcessEventER7wxEvent
+62784A3D  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:62784A3D  _ZN12wxEvtHandler12ProcessEventER7wxEvent
+62784A3D  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:62784A3D  _ZN12wxEvtHandler12ProcessEventER7wxEvent
+62784A3D  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:62784A3D  _ZN12wxEvtHandler12ProcessEventER7wxEvent
+62784A3D  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:62784A3D  _ZN12wxEvtHandler12ProcessEventER7wxEvent
+62784A3D  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:62784A3D  _ZN12wxEvtHandler12ProcessEventER7wxEvent
+62784A3D  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:62784A3D  _ZN12wxEvtHandler12ProcessEventER7wxEvent
+62784A3D  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:62784A3D  _ZN12wxEvtHandler12ProcessEventER7wxEvent
+62784A3D  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:62784A3D  _ZN12wxEvtHandler12ProcessEventER7wxEvent
+62784A3D  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:62784A3D  _ZN12wxEvtHandler12ProcessEventER7wxEvent
+62784A3D  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:62784A3D  _ZN12wxEvtHandler12ProcessEventER7wxEvent
+62784A3D  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:62784A3D  _ZN12wxEvtHandler12ProcessEventER7wxEvent
+62784A3D  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:62784A3D  _ZN12wxEvtHandler12ProcessEventER7wxEvent
+62784A3D  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:62784A3D  _ZN12wxEvtHandler12ProcessEventER7wxEvent
+62784A3D  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:62784A3D  _ZN12wxEvtHandler12ProcessEventER7wxEvent
+62784A3D  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:62784A3D  _ZN12wxEvtHandler12ProcessEventER7wxEvent
+62784A3D  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:62784A3D  _ZN12wxEvtHandler12ProcessEventER7wxEvent
+62784A3D  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:62784A3D  _ZN12wxEvtHandler12ProcessEventER7wxEvent
+62784A3D  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:62784A3D  _ZN12wxEvtHandler12ProcessEventER7wxEvent
+62784A3D  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:62784A3D  _ZN12wxEvtHandler12ProcessEventER7wxEvent
+62784A3D  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:62784A3D  _ZN12wxEvtHandler12ProcessEventER7wxEvent
+62784A3D  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:62784A3D  _ZN12wxEvtHandler12ProcessEventER7wxEvent
+62784A3D  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:62784A3D  _ZN12wxEvtHandler12ProcessEventER7wxEvent
+62784A3D  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:62784A3D  _ZN12wxEvtHandler12ProcessEventER7wxEvent
+62784A3D  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:62784A3D  _ZN12wxEvtHandler12ProcessEventER7wxEvent
+628528E1  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:628528E1  _ZN11wxFrameBase14ProcessCommandEi
+627F4129  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:627F4129  _ZN7wxFrame13HandleCommandEttPv
+627F5CCF  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:627F5CCF  _ZN7wxFrame13MSWWindowProcEjjl
+627CF571  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:627CF571  _Z9wxWndProcP6HWND__jjl@16
+7E418734  C:\WINDOWS\system32\USER32.dll:7E418734  GetDC
+7E418816  C:\WINDOWS\system32\USER32.dll:7E418816  GetDC
+7E4189CD  C:\WINDOWS\system32\USER32.dll:7E4189CD  GetWindowLongW
+7E418A10  C:\WINDOWS\system32\USER32.dll:7E418A10  DispatchMessageW
+627B68D0  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:627B68D0  _ZN11wxEventLoop14ProcessMessageEP6tagMSG
+627B657C  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:627B657C  _ZN11wxEventLoop8DispatchEv
+6284AC6E  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:6284AC6E  _ZN17wxEventLoopManual3RunEv
+6282A0EB  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:6282A0EB  _ZN9wxAppBase8MainLoopEv
+004045FC  J:\apps\Codeblocks\codeblocks.exe:004045FC
+62733B91  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:62733B91  _Z12wxInitializeiPPw
+6278A917  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:6278A917  _Z7wxEntryP11HINSTANCE__S0_Pci
+00401B09  J:\apps\Codeblocks\codeblocks.exe:00401B09
+004577A6  J:\apps\Codeblocks\codeblocks.exe:004577A6
+004010B6  J:\apps\Codeblocks\codeblocks.exe:004010B6
+00401128  J:\apps\Codeblocks\codeblocks.exe:00401128
+7C817077  C:\WINDOWS\system32\kernel32.dll:7C817077  RegisterWaitForInputIdle
+
+
+-------------------
+
+Error occured on Tuesday, February 8, 2011 at 14:26:38.
+
+J:\apps\Codeblocks\codeblocks.exe caused an Access Violation at location 84f06289 Reading from location 84f06289.
+
+Registers:
+eax=07f9ccf0 ebx=0022f724 ecx=0022f724 edx=84f06289 esi=617c7736 edi=00ea84f8
+eip=84f06289 esp=0022f608 ebp=0022f634 iopl=0         nv up ei pl nz ac pe nc
+cs=001b  ss=0023  ds=0023  es=0023  fs=003b  gs=0000             efl=00010212
+
+Call stack:
+84F06289
+617C78E7  J:\apps\Codeblocks\codeblocks.dll:617C78E7  _ZN13cbAuiNotebook12RestoreFocusEv
+617C77B6  J:\apps\Codeblocks\codeblocks.dll:617C77B6  _ZN13cbAuiNotebook14OnLeaveTabCtrlER12wxMouseEvent
+62782F49  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:62782F49  _ZN12wxEvtHandler21ProcessEventIfMatchesERK21wxEventTableEntryBasePS_R7wxEvent
+62783090  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:62783090  _ZN12wxEvtHandler23SearchDynamicEventTableER7wxEvent
+62784A77  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:62784A77  _ZN12wxEvtHandler12ProcessEventER7wxEvent
+627D1E50  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:627D1E50  _ZN8wxWindow18GenerateMouseLeaveEv
+627D6949  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:627D6949  _ZN8wxWindow13MSWWindowProcEjjl
+627CF571  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:627CF571  _Z9wxWndProcP6HWND__jjl@16
+7E418734  C:\WINDOWS\system32\USER32.dll:7E418734  GetDC
+7E418816  C:\WINDOWS\system32\USER32.dll:7E418816  GetDC
+7E4189CD  C:\WINDOWS\system32\USER32.dll:7E4189CD  GetWindowLongW
+7E418A10  C:\WINDOWS\system32\USER32.dll:7E418A10  DispatchMessageW
+627B68D0  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:627B68D0  _ZN11wxEventLoop14ProcessMessageEP6tagMSG
+627B657C  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:627B657C  _ZN11wxEventLoop8DispatchEv
+6284AC6E  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:6284AC6E  _ZN17wxEventLoopManual3RunEv
+6282A0EB  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:6282A0EB  _ZN9wxAppBase8MainLoopEv
+004045FC  J:\apps\Codeblocks\codeblocks.exe:004045FC
+62733B91  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:62733B91  _Z12wxInitializeiPPw
+6278A917  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:6278A917  _Z7wxEntryP11HINSTANCE__S0_Pci
+00401B09  J:\apps\Codeblocks\codeblocks.exe:00401B09
+004577A6  J:\apps\Codeblocks\codeblocks.exe:004577A6
+004010B6  J:\apps\Codeblocks\codeblocks.exe:004010B6
+00401128  J:\apps\Codeblocks\codeblocks.exe:00401128
+7C817077  C:\WINDOWS\system32\kernel32.dll:7C817077  RegisterWaitForInputIdle
+
+
+-------------------
+
+Error occured on Friday, February 11, 2011 at 10:38:17.
+
+J:\apps\Codeblocks\codeblocks.exe caused an Access Violation at location 618e44f1 in module J:\apps\Codeblocks\codeblocks.dll Reading from location 00000150.
+
+Registers:
+eax=00000000 ebx=09fcfd5c ecx=77c2c2e3 edx=00000000 esi=037ca370 edi=07ac3668
+eip=618e44f1 esp=09fcfca8 ebp=09fcfcc0 iopl=0         nv up ei pl nz ac pe nc
+cs=001b  ss=0023  ds=0023  es=0023  fs=003b  gs=0000             efl=00010212
+
+Call stack:
+618E44F1  J:\apps\Codeblocks\codeblocks.dll:618E44F1  _ZNK11wxScintilla7SendMsgEjml
+618E78CB  J:\apps\Codeblocks\codeblocks.dll:618E78CB  _ZNK11wxScintilla13GetTextLengthEv
+618E77DE  J:\apps\Codeblocks\codeblocks.dll:618E77DE  _ZNK11wxScintilla7GetTextEv
+61844A6E  J:\apps\Codeblocks\codeblocks.dll:61844A6E  _ZN11FileManager4LoadERK8wxStringb
+65ED0B6B  J:\apps\Codeblocks\share\codeblocks\plugins\codecompletion.dll:65ED0B6B
+65ED09D3  J:\apps\Codeblocks\share\codeblocks\plugins\codecompletion.dll:65ED09D3
+65EFF678  J:\apps\Codeblocks\share\codeblocks\plugins\codecompletion.dll:65EFF678  _ZN12cbToolPlugin9BuildMenuEP9wxMenuBar
+617EC8AF  J:\apps\Codeblocks\codeblocks.dll:617EC8AF  _ZN12cbThreadPool14cbWorkerThread5EntryEv
+6277E048  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:6277E048  _ZN8wxThread3RunEv
+6277E13B  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:6277E13B  _ZN8wxThread3RunEv
+77C3A3B0  C:\WINDOWS\system32\msvcrt.dll:77C3A3B0  _endthreadex
+7C80B729  C:\WINDOWS\system32\kernel32.dll:7C80B729  GetModuleFileNameA
+
+
+-------------------
+
+Error occured on Saturday, February 12, 2011 at 11:11:50.
+
+J:\apps\Codeblocks\codeblocks.exe caused an Access Violation at location 617c78d7 in module J:\apps\Codeblocks\codeblocks.dll Reading from location ffe500cb.
+
+Registers:
+eax=ffe500cb ebx=ffffff90 ecx=ffffff90 edx=00000000 esi=00000064 edi=01305200
+eip=617c78d7 esp=0023fa28 ebp=0023fa50 iopl=0         nv up ei ng nz ac pe nc
+cs=001b  ss=0023  ds=0023  es=0023  fs=003b  gs=0000             efl=00010292
+
+Call stack:
+617C78D7  J:\apps\Codeblocks\codeblocks.dll:617C78D7  _ZN13cbAuiNotebook12RestoreFocusEv
+617C7660  J:\apps\Codeblocks\codeblocks.dll:617C7660  _ZN13cbAuiNotebook19OnDwellTimerTriggerER12wxTimerEvent
+62782F49  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:62782F49  _ZN12wxEvtHandler21ProcessEventIfMatchesERK21wxEventTableEntryBasePS_R7wxEvent
+62783090  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:62783090  _ZN12wxEvtHandler23SearchDynamicEventTableER7wxEvent
+62784A77  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:62784A77  _ZN12wxEvtHandler12ProcessEventER7wxEvent
+62892FEB  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:62892FEB  _ZN11wxTimerBase6NotifyEv
+627C8830  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:627C8830  _ZN7wxTimer4InitEv
+7E418734  C:\WINDOWS\system32\USER32.dll:7E418734  GetDC
+7E418816  C:\WINDOWS\system32\USER32.dll:7E418816  GetDC
+7E4189CD  C:\WINDOWS\system32\USER32.dll:7E4189CD  GetWindowLongW
+7E418A10  C:\WINDOWS\system32\USER32.dll:7E418A10  DispatchMessageW
+7E4274FF  C:\WINDOWS\system32\USER32.dll:7E4274FF  IsDialogMessageW
+627B67C1  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:627B67C1  _ZN11wxEventLoop17PreProcessMessageEP6tagMSG
+627B68B9  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:627B68B9  _ZN11wxEventLoop14ProcessMessageEP6tagMSG
+627B657C  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:627B657C  _ZN11wxEventLoop8DispatchEv
+6284AC6E  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:6284AC6E  _ZN17wxEventLoopManual3RunEv
+6282A0EB  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:6282A0EB  _ZN9wxAppBase8MainLoopEv
+004045FC  J:\apps\Codeblocks\codeblocks.exe:004045FC
+62733B91  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:62733B91  _Z12wxInitializeiPPw
+6278A917  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:6278A917  _Z7wxEntryP11HINSTANCE__S0_Pci
+00401B09  J:\apps\Codeblocks\codeblocks.exe:00401B09
+004577A6  J:\apps\Codeblocks\codeblocks.exe:004577A6
+004010B6  J:\apps\Codeblocks\codeblocks.exe:004010B6
+00401128  J:\apps\Codeblocks\codeblocks.exe:00401128
+7C817077  C:\WINDOWS\system32\kernel32.dll:7C817077  RegisterWaitForInputIdle
+
+
+-------------------
+
+Error occured on Saturday, February 12, 2011 at 18:56:59.
+
+J:\apps\Codeblocks\codeblocks.exe caused an Access Violation at location 256062b2 Reading from location 256062b2.
+
+Registers:
+eax=0903b740 ebx=0023f724 ecx=0023f724 edx=256062b2 esi=617c7736 edi=01332538
+eip=256062b2 esp=0023f608 ebp=0023f634 iopl=0         nv up ei pl nz na pe nc
+cs=001b  ss=0023  ds=0023  es=0023  fs=003b  gs=0000             efl=00010202
+
+Call stack:
+256062B2
+617C78E7  J:\apps\Codeblocks\codeblocks.dll:617C78E7  _ZN13cbAuiNotebook12RestoreFocusEv
+617C77B6  J:\apps\Codeblocks\codeblocks.dll:617C77B6  _ZN13cbAuiNotebook14OnLeaveTabCtrlER12wxMouseEvent
+62782F49  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:62782F49  _ZN12wxEvtHandler21ProcessEventIfMatchesERK21wxEventTableEntryBasePS_R7wxEvent
+62783090  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:62783090  _ZN12wxEvtHandler23SearchDynamicEventTableER7wxEvent
+62784A77  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:62784A77  _ZN12wxEvtHandler12ProcessEventER7wxEvent
+627D1E50  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:627D1E50  _ZN8wxWindow18GenerateMouseLeaveEv
+627D6949  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:627D6949  _ZN8wxWindow13MSWWindowProcEjjl
+627CF571  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:627CF571  _Z9wxWndProcP6HWND__jjl@16
+7E418734  C:\WINDOWS\system32\USER32.dll:7E418734  GetDC
+7E418816  C:\WINDOWS\system32\USER32.dll:7E418816  GetDC
+7E4189CD  C:\WINDOWS\system32\USER32.dll:7E4189CD  GetWindowLongW
+7E418A10  C:\WINDOWS\system32\USER32.dll:7E418A10  DispatchMessageW
+627B68D0  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:627B68D0  _ZN11wxEventLoop14ProcessMessageEP6tagMSG
+627B657C  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:627B657C  _ZN11wxEventLoop8DispatchEv
+6284AC6E  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:6284AC6E  _ZN17wxEventLoopManual3RunEv
+6282A0EB  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:6282A0EB  _ZN9wxAppBase8MainLoopEv
+004045FC  J:\apps\Codeblocks\codeblocks.exe:004045FC
+62733B91  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:62733B91  _Z12wxInitializeiPPw
+6278A917  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:6278A917  _Z7wxEntryP11HINSTANCE__S0_Pci
+00401B09  J:\apps\Codeblocks\codeblocks.exe:00401B09
+004577A6  J:\apps\Codeblocks\codeblocks.exe:004577A6
+004010B6  J:\apps\Codeblocks\codeblocks.exe:004010B6
+00401128  J:\apps\Codeblocks\codeblocks.exe:00401128
+7C817077  C:\WINDOWS\system32\kernel32.dll:7C817077  RegisterWaitForInputIdle
+
+
+-------------------
+
+Error occured on Tuesday, February 15, 2011 at 14:36:21.
+
+J:\apps\Codeblocks\codeblocks.exe caused an Access Violation at location 706289a5 Reading from location 706289a5.
+
+Registers:
+eax=06a56dd0 ebx=0022e8e0 ecx=00040230 edx=62c10185 esi=06a56dd0 edi=00000000
+eip=706289a5 esp=0022e8c0 ebp=0022e90c iopl=0         nv up ei pl nz na pe nc
+cs=001b  ss=0023  ds=0023  es=0023  fs=003b  gs=0000             efl=00010202
+
+Call stack:
+706289A5
+628981A2  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:628981A2  _ZN12wxWindowBase8NavigateEi
+628981FE  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:628981FE  _ZN12wxWindowBase17NotifyCaptureLostEv
+627D240A  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:627D240A  _ZN8wxWindow20HandleCaptureChangedEPv
+627D5F12  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:627D5F12  _ZN8wxWindow13MSWWindowProcEjjl
+627F5C6D  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:627F5C6D  _ZN7wxFrame13MSWWindowProcEjjl
+627CF571  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:627CF571  _Z9wxWndProcP6HWND__jjl@16
+7E418734  C:\WINDOWS\system32\USER32.dll:7E418734  GetDC
+7E418816  C:\WINDOWS\system32\USER32.dll:7E418816  GetDC
+7E428EA0  C:\WINDOWS\system32\USER32.dll:7E428EA0  DefWindowProcW
+7E428EEC  C:\WINDOWS\system32\USER32.dll:7E428EEC  DefWindowProcW
+7C90E473  C:\WINDOWS\system32\ntdll.dll:7C90E473  KiUserCallbackDispatcher
+7E428DD9  C:\WINDOWS\system32\USER32.dll:7E428DD9  DefWindowProcW
+7E428D77  C:\WINDOWS\system32\USER32.dll:7E428D77  DefWindowProcW
+627CF7AA  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:627CF7AA  _ZN8wxWindow16MSWDefWindowProcEjjl
+627D625B  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:627D625B  _ZN8wxWindow13MSWWindowProcEjjl
+627F5C6D  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:627F5C6D  _ZN7wxFrame13MSWWindowProcEjjl
+627CF571  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:627CF571  _Z9wxWndProcP6HWND__jjl@16
+7E418734  C:\WINDOWS\system32\USER32.dll:7E418734  GetDC
+7E418816  C:\WINDOWS\system32\USER32.dll:7E418816  GetDC
+7E428EA0  C:\WINDOWS\system32\USER32.dll:7E428EA0  DefWindowProcW
+7E428EEC  C:\WINDOWS\system32\USER32.dll:7E428EEC  DefWindowProcW
+7C90E473  C:\WINDOWS\system32\ntdll.dll:7C90E473  KiUserCallbackDispatcher
+7E428DD9  C:\WINDOWS\system32\USER32.dll:7E428DD9  DefWindowProcW
+7E428D77  C:\WINDOWS\system32\USER32.dll:7E428D77  DefWindowProcW
+627CF7AA  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:627CF7AA  _ZN8wxWindow16MSWDefWindowProcEjjl
+627D625B  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:627D625B  _ZN8wxWindow13MSWWindowProcEjjl
+627F5C6D  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:627F5C6D  _ZN7wxFrame13MSWWindowProcEjjl
+627CF571  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:627CF571  _Z9wxWndProcP6HWND__jjl@16
+7E418734  C:\WINDOWS\system32\USER32.dll:7E418734  GetDC
+7E418816  C:\WINDOWS\system32\USER32.dll:7E418816  GetDC
+7E4189CD  C:\WINDOWS\system32\USER32.dll:7E4189CD  GetWindowLongW
+7E418A10  C:\WINDOWS\system32\USER32.dll:7E418A10  DispatchMessageW
+627B68D0  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:627B68D0  _ZN11wxEventLoop14ProcessMessageEP6tagMSG
+627B657C  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:627B657C  _ZN11wxEventLoop8DispatchEv
+6284AC6E  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:6284AC6E  _ZN17wxEventLoopManual3RunEv
+6282A0EB  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:6282A0EB  _ZN9wxAppBase8MainLoopEv
+004045FC  J:\apps\Codeblocks\codeblocks.exe:004045FC
+62733B91  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:62733B91  _Z12wxInitializeiPPw
+6278A917  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:6278A917  _Z7wxEntryP11HINSTANCE__S0_Pci
+00401B09  J:\apps\Codeblocks\codeblocks.exe:00401B09
+004577A6  J:\apps\Codeblocks\codeblocks.exe:004577A6
+004010B6  J:\apps\Codeblocks\codeblocks.exe:004010B6
+00401128  J:\apps\Codeblocks\codeblocks.exe:00401128
+7C817077  C:\WINDOWS\system32\kernel32.dll:7C817077  RegisterWaitForInputIdle
+
+
+-------------------
+
+Error occured on Tuesday, February 15, 2011 at 15:14:29.
+
+J:\apps\Codeblocks\codeblocks.exe caused an Access Violation at location 8978c062 Reading from location 8978c062.
+
+Registers:
+eax=033ed188 ebx=0022e8e0 ecx=0007026c edx=62c101db esi=033ed188 edi=00000000
+eip=8978c062 esp=0022e8c0 ebp=0022e90c iopl=0         nv up ei pl nz na pe nc
+cs=001b  ss=0023  ds=0023  es=0023  fs=003b  gs=0000             efl=00010202
+
+Call stack:
+8978C062
+628981A2  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:628981A2  _ZN12wxWindowBase8NavigateEi
+628981FE  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:628981FE  _ZN12wxWindowBase17NotifyCaptureLostEv
+627D240A  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:627D240A  _ZN8wxWindow20HandleCaptureChangedEPv
+627D5F12  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:627D5F12  _ZN8wxWindow13MSWWindowProcEjjl
+627F5C6D  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:627F5C6D  _ZN7wxFrame13MSWWindowProcEjjl
+627CF571  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:627CF571  _Z9wxWndProcP6HWND__jjl@16
+7E418734  C:\WINDOWS\system32\USER32.dll:7E418734  GetDC
+7E418816  C:\WINDOWS\system32\USER32.dll:7E418816  GetDC
+7E428EA0  C:\WINDOWS\system32\USER32.dll:7E428EA0  DefWindowProcW
+7E428EEC  C:\WINDOWS\system32\USER32.dll:7E428EEC  DefWindowProcW
+7C90E473  C:\WINDOWS\system32\ntdll.dll:7C90E473  KiUserCallbackDispatcher
+7E428DD9  C:\WINDOWS\system32\USER32.dll:7E428DD9  DefWindowProcW
+7E428D77  C:\WINDOWS\system32\USER32.dll:7E428D77  DefWindowProcW
+627CF7AA  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:627CF7AA  _ZN8wxWindow16MSWDefWindowProcEjjl
+627D625B  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:627D625B  _ZN8wxWindow13MSWWindowProcEjjl
+627F5C6D  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:627F5C6D  _ZN7wxFrame13MSWWindowProcEjjl
+627CF571  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:627CF571  _Z9wxWndProcP6HWND__jjl@16
+7E418734  C:\WINDOWS\system32\USER32.dll:7E418734  GetDC
+7E418816  C:\WINDOWS\system32\USER32.dll:7E418816  GetDC
+7E428EA0  C:\WINDOWS\system32\USER32.dll:7E428EA0  DefWindowProcW
+7E428EEC  C:\WINDOWS\system32\USER32.dll:7E428EEC  DefWindowProcW
+7C90E473  C:\WINDOWS\system32\ntdll.dll:7C90E473  KiUserCallbackDispatcher
+7E428DD9  C:\WINDOWS\system32\USER32.dll:7E428DD9  DefWindowProcW
+7E428D77  C:\WINDOWS\system32\USER32.dll:7E428D77  DefWindowProcW
+627CF7AA  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:627CF7AA  _ZN8wxWindow16MSWDefWindowProcEjjl
+627D625B  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:627D625B  _ZN8wxWindow13MSWWindowProcEjjl
+627F5C6D  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:627F5C6D  _ZN7wxFrame13MSWWindowProcEjjl
+627CF571  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:627CF571  _Z9wxWndProcP6HWND__jjl@16
+7E418734  C:\WINDOWS\system32\USER32.dll:7E418734  GetDC
+7E418816  C:\WINDOWS\system32\USER32.dll:7E418816  GetDC
+7E4189CD  C:\WINDOWS\system32\USER32.dll:7E4189CD  GetWindowLongW
+7E418A10  C:\WINDOWS\system32\USER32.dll:7E418A10  DispatchMessageW
+627B68D0  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:627B68D0  _ZN11wxEventLoop14ProcessMessageEP6tagMSG
+627B657C  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:627B657C  _ZN11wxEventLoop8DispatchEv
+6284AC6E  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:6284AC6E  _ZN17wxEventLoopManual3RunEv
+6282A0EB  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:6282A0EB  _ZN9wxAppBase8MainLoopEv
+004045FC  J:\apps\Codeblocks\codeblocks.exe:004045FC
+62733B91  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:62733B91  _Z12wxInitializeiPPw
+6278A917  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:6278A917  _Z7wxEntryP11HINSTANCE__S0_Pci
+00401B09  J:\apps\Codeblocks\codeblocks.exe:00401B09
+004577A6  J:\apps\Codeblocks\codeblocks.exe:004577A6
+004010B6  J:\apps\Codeblocks\codeblocks.exe:004010B6
+00401128  J:\apps\Codeblocks\codeblocks.exe:00401128
+7C817077  C:\WINDOWS\system32\kernel32.dll:7C817077  RegisterWaitForInputIdle
+
+
+-------------------
+
+Error occured on Saturday, February 19, 2011 at 17:28:32.
+
+J:\apps\Codeblocks\codeblocks.exe caused an Access Violation at location 00000000 Reading from location 00000000.
+
+Registers:
+eax=0804d060 ebx=0023e8e0 ecx=00050620 edx=62c1dbe8 esi=0804d060 edi=00000000
+eip=00000000 esp=0023e8c0 ebp=0023e90c iopl=0         nv up ei pl nz na pe nc
+cs=001b  ss=0023  ds=0023  es=0023  fs=003b  gs=0000             efl=00010202
+
+Call stack:
+00000000
+628981A2  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:628981A2  _ZN12wxWindowBase8NavigateEi
+628981FE  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:628981FE  _ZN12wxWindowBase17NotifyCaptureLostEv
+627D240A  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:627D240A  _ZN8wxWindow20HandleCaptureChangedEPv
+627D5F12  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:627D5F12  _ZN8wxWindow13MSWWindowProcEjjl
+627F5C6D  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:627F5C6D  _ZN7wxFrame13MSWWindowProcEjjl
+627CF571  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:627CF571  _Z9wxWndProcP6HWND__jjl@16
+7E418734  C:\WINDOWS\system32\USER32.dll:7E418734  GetDC
+7E418816  C:\WINDOWS\system32\USER32.dll:7E418816  GetDC
+7E428EA0  C:\WINDOWS\system32\USER32.dll:7E428EA0  DefWindowProcW
+7E428EEC  C:\WINDOWS\system32\USER32.dll:7E428EEC  DefWindowProcW
+7C90E473  C:\WINDOWS\system32\ntdll.dll:7C90E473  KiUserCallbackDispatcher
+7E428DD9  C:\WINDOWS\system32\USER32.dll:7E428DD9  DefWindowProcW
+7E428D77  C:\WINDOWS\system32\USER32.dll:7E428D77  DefWindowProcW
+627CF7AA  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:627CF7AA  _ZN8wxWindow16MSWDefWindowProcEjjl
+627D625B  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:627D625B  _ZN8wxWindow13MSWWindowProcEjjl
+627F5C6D  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:627F5C6D  _ZN7wxFrame13MSWWindowProcEjjl
+627CF571  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:627CF571  _Z9wxWndProcP6HWND__jjl@16
+7E418734  C:\WINDOWS\system32\USER32.dll:7E418734  GetDC
+7E418816  C:\WINDOWS\system32\USER32.dll:7E418816  GetDC
+7E428EA0  C:\WINDOWS\system32\USER32.dll:7E428EA0  DefWindowProcW
+7E428EEC  C:\WINDOWS\system32\USER32.dll:7E428EEC  DefWindowProcW
+7C90E473  C:\WINDOWS\system32\ntdll.dll:7C90E473  KiUserCallbackDispatcher
+7E428DD9  C:\WINDOWS\system32\USER32.dll:7E428DD9  DefWindowProcW
+7E428D77  C:\WINDOWS\system32\USER32.dll:7E428D77  DefWindowProcW
+627CF7AA  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:627CF7AA  _ZN8wxWindow16MSWDefWindowProcEjjl
+627D625B  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:627D625B  _ZN8wxWindow13MSWWindowProcEjjl
+627F5C6D  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:627F5C6D  _ZN7wxFrame13MSWWindowProcEjjl
+627CF571  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:627CF571  _Z9wxWndProcP6HWND__jjl@16
+7E418734  C:\WINDOWS\system32\USER32.dll:7E418734  GetDC
+7E418816  C:\WINDOWS\system32\USER32.dll:7E418816  GetDC
+7E4189CD  C:\WINDOWS\system32\USER32.dll:7E4189CD  GetWindowLongW
+7E418A10  C:\WINDOWS\system32\USER32.dll:7E418A10  DispatchMessageW
+627B68D0  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:627B68D0  _ZN11wxEventLoop14ProcessMessageEP6tagMSG
+627B657C  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:627B657C  _ZN11wxEventLoop8DispatchEv
+6284AC6E  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:6284AC6E  _ZN17wxEventLoopManual3RunEv
+6282A0EB  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:6282A0EB  _ZN9wxAppBase8MainLoopEv
+004045FC  J:\apps\Codeblocks\codeblocks.exe:004045FC
+62733B91  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:62733B91  _Z12wxInitializeiPPw
+6278A917  J:\apps\Codeblocks\wxmsw28u_gcc_custom.dll:6278A917  _Z7wxEntryP11HINSTANCE__S0_Pci
+00401B09  J:\apps\Codeblocks\codeblocks.exe:00401B09
+00457FE6  J:\apps\Codeblocks\codeblocks.exe:00457FE6
+004010B6  J:\apps\Codeblocks\codeblocks.exe:004010B6
+00401128  J:\apps\Codeblocks\codeblocks.exe:00401128
+7C817077  C:\WINDOWS\system32\kernel32.dll:7C817077  RegisterWaitForInputIdle
+
+

@@ -1,0 +1,53 @@
+
+	ErrorMsg v. 1.3
+
+Copyright (c) 2010  FavesSoft LLC
+
+Latest version:
+
+http://www.FavesSoft.com/ErrMsg.zip
+
+
+ErrMsg returns error descriptions for Windows system
+error messages and HRESULT return codes.
+
+A typical Windows system error would be decimal 5 for
+"access denied" or 2 for "the system cannot find the
+file specified" or 3 for "the system cannot find the
+path specified" etc..
+
+An HRESULT return code is the one that starts with 0x
+and then 8 digits.  For example E_FAIL is the hex number
+0x80000008 and returns the string "unspecified error" since
+it's a catch-all COM or ActiveX error that just means the
+operation failed. 0x80000005 is "invalid pointer" which
+means there's a good chance the programs's memory got
+corrupted or it used an uninitialized pointer(the
+correct memory address was never inserted.)
+
+More useful for programmers but may come in handy esp. for
+those error dialogs that only give a hex error code.
+
+When entering hex error codes make sure to put the 0x
+at the beginning or else the lookup will be for a
+decimal number and will return the wrong message.
+
+Free for personal use at your own risk.
+Feel free to donate to keep FavesSoft.com online:
+http://www.FavesSoft.com/donate.html
+
+I hope you find the utility useful.
+
+MilesAhead
+
+
+Version history
+
+v. 1.3 Pressing F1 now shows About Box.
+
+v. 1.2 Recompiled to remove msvcr100.dll dependency.
+
+v. 1.1 Added version info to .exe file.
+
+v. 1.0 Redesigned to use EditBox to allow copy/paste
+of error message text.

@@ -1,0 +1,118 @@
+
+// globals (used under windows only)
+koolplotPathDefault    <- _T("$(CODEBLOCKS)/sdk/koolplot");
+koolplotPathDefaultInc <- _T("$(CODEBLOCKS)/sdk/koolplot/include");
+koolplotPathDefaultLib <- _T("$(CODEBLOCKS)/sdk/koolplot/lib");
+koolplotPath           <- _T("");
+// WinBGIm is also required
+winbgimPathDefault    <- _T("$(CODEBLOCKS)/sdk/winbgim");
+winbgimPathDefaultInc <- _T("$(CODEBLOCKS)/sdk/winbgim/include");
+winbgimPathDefaultLib <- _T("$(CODEBLOCKS)/sdk/winbgim/lib");
+
+
+/** ProjectType: 0 - No Console, 1 - With Console
+*   Default: 0
+*/
+ProjectType <- 0;
+
+function BeginWizard()
+{
+    local intro_msg = _T("Welcome to the koolplot project wizard!\n\n" +
+                         "This wizard will guide you to create a new project\n" +
+                         "using the koolplot graph plotting library.\n\n" +
+                         "When you 're ready to proceed, please click \"Next\"...");
+    Wizard.AddInfoPage(_T("koolplotIntro"), intro_msg);
+
+    Wizard.AddGenericSingleChoiceListPage(_T("koolplotProjType"),
+            _T("Please select type of project."),
+            _T("Add Console;Graphics only"),
+            ProjectType); // select type of
+
+    Wizard.AddProjectPathPage();
+    Wizard.AddCompilerPage(_T(""), _T("*"), true, true);
+}
+
+////////////////////////////////////////////////////////////////////////////////
+// Project Type page
+////////////////////////////////////////////////////////////////////////////////
+
+function OnEnter_koolplotProjType(fwd)
+{
+    if (fwd)
+    {
+        ProjectType = Wizard.GetListboxSelection(_T("GenericChoiceList"));
+    }
+    return true;
+}
+
+function OnLeave_koolplotProjType(fwd)
+{
+    if (fwd)
+    {
+        ProjectType = Wizard.GetListboxSelection(_T("GenericChoiceList"));
+    }
+    return true;
+}
+
+// return the files this project contains
+function GetFilesDir()
+{
+    return _T("koolplot/files");
+}
+
+// setup the already created project
+function SetupProject(project)
+{
+    // enable compiler warnings (project-wide)
+    WarningsOn(project, Wizard.GetCompilerID());
+
+    if (PLATFORM == PLATFORM_MSW)
+    {
+        project.AddIncludeDir(koolplotPathDefaultInc);
+        project.AddIncludeDir(winbgimPathDefaultInc);
+        project.AddLibDir(koolplotPathDefaultLib);
+        project.AddLibDir(winbgimPathDefaultLib);
+
+        // add link libraries
+        project.AddLinkLib(_T("koolplot"));
+        project.AddLinkLib(_T("bgi"));
+        project.AddLinkLib(_T("gdi32"));
+        project.AddLinkLib(_T("comdlg32"));
+        project.AddLinkLib(_T("uuid"));
+        project.AddLinkLib(_T("oleaut32"));
+        project.AddLinkLib(_T("ole32"));
+
+        // Force C++ compilation
+        project.AddCompilerOption(_T("-x c++"));
+        project.AddCompilerOption(_T("-Wno-unused-value"));
+
+    }
+
+    // enable compiler warnings (project-wide)
+    Cpp98StrictOn(project, Wizard.GetCompilerID());
+
+    // Debug
+    local target = project.GetBuildTarget(Wizard.GetDebugName());
+    if (!IsNull(target))
+    {
+        target.SetTargetType(ttConsoleOnly); // ttConsoleOnly: console for debugging
+        target.SetOutputFilename(Wizard.GetDebugOutputDir() + Wizard.GetProjectName() + DOT_EXT_EXECUTABLE);
+        // enable generation of debugging symbols for target
+        DebugSymbolsOn(target, Wizard.GetCompilerID());
+    }
+
+    // Release
+    target = project.GetBuildTarget(Wizard.GetReleaseName());
+    if (!IsNull(target))
+    {
+        if(ProjectType == 0)
+            target.SetTargetType(ttConsoleOnly); // Add console for I/O and debugging
+        else
+            target.SetTargetType(ttExecutable); // ttExecutable: no console
+        target.SetOutputFilename(Wizard.GetReleaseOutputDir() + Wizard.GetProjectName() + DOT_EXT_EXECUTABLE);
+        // enable optimizations for target
+        OptimizationsOn(target, Wizard.GetCompilerID());
+    }
+
+    return true;
+}

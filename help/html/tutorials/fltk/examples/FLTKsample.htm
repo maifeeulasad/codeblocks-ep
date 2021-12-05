@@ -1,0 +1,151 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>FLTK Tutorial</title>
+<link href="../CSS/1colNheader.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+<!--
+.style10 {
+	color: #3C505E;
+	font-size: xx-small;
+	font-style: italic;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+h5 {
+	font-size: small;
+	color: rgb(90, 95, 102);
+}
+.style14 {color: #324E51}
+.style20 {font-size: x-small}
+.style21 {font-size: smaller}
+#wrapper #header table tr td h1 {
+	font-family: Verdana, Geneva, sans-serif;
+}
+.style22 {
+	color: #930;
+	font-size: x-large;
+}
+#wrapper #header table tr td h2 {
+	text-align: center;
+}
+#wrapper #header table tr td p .style22 em {
+	font-size: large;
+}
+</style>
+</head>
+
+<body>
+<div id="wrapper">
+  <div id="header">
+    <table width="92%" border="0" align="center" cellpadding="2">
+      <tr>
+        <td width="330"><h1 align="left" class="style22">Example FLTK Project:</h1>
+          <p align="left"><strong class="style22"><em>FLTK example using FLUID</em></strong><br />
+        </p></td>
+        <td width="293"><span class="style14"><img src="../../../pics/Sudoku.gif" alt="image: Portion of grid" width="292" height="322" align="absmiddle" /></span></td>
+        <td width="303"><h2 class="style22"> + 60 FLTK Code Examples  </h2></td>
+      </tr>
+    </table>
+  </div>
+  <div id="main">
+    <p class="abstract">FLTK (pronounced &quot;fulltick&quot;) is a cross-platform C++ GUI  toolkit. FLTK programs developed under Code::Blocks-EP for Windows&reg; can then be easily ported to UNIX&reg;/Linux&reg; (X11) and  MacOS&reg; X. Many applications, both commercial and open-source have been developed with FLTK. </p>
+    <p class="abstract">FLTK is designed to be small and modular enough to be  statically linked, which is important in development environments like Quincy and Code::Blocks.</p>
+    <p class="abstract">      FLTK also  includes an excellent GUI builder called FLUID that can be used  to create applications in minutes.<br />
+      The example programs offered here all come with the full distribution of the FLTK library at <a href="http://fltk.org">http://fltk.org</a><br />
+    </p>
+    <hr />
+    <br />
+    <h2 class="style22">Before we start</h2>
+    <p>Get the example from the zip file: <a href="FLTKexamples.zip">FLTKexamples.zip</a><a href="../FLTK1.1/winanim.zip"></a> (note: Only one Code::Blocks-ready project is in these examples).</p>
+<p>Save the archive into the new &quot;<em>FLTKexamples</em>&quot; subdirectory, and extract all the source files from the archive into that directory. The directory contains many separate examples. The Code::Blocks &quot;CubeView&quot; project is located in  the separate directory CubeView4CodeBlocks.</p>
+<p>You may note that the C++ source files in the examples directory have extension <em><strong>&quot;.cxx&quot;</strong></em>, and not the <em>&quot;.cpp&quot;</em> favoured by Microsoft. This does not pose a problem, as IDEs treat &quot;.cpp&quot;, &quot;.cc&quot; and &quot;.cxx&quot; in exactly the same way.<br />
+  In addition to C++ source files the directory contains image files used in the various projects (.png or .xbm), Windows resource files (.rc), FLUID project files (.fl),  various icons, etc...</p>
+    <p>    In addition to the CubeView example, the directory contains code  for  examples:</p>
+    <div align="center">
+      <table width="247" border="1">
+        <tr>
+          <td width="114"><span class="style21">&nbsp;&nbsp;adjuster<br />
+  &nbsp;&nbsp;arc <br />
+  &nbsp;&nbsp;ask<br />
+  &nbsp;&nbsp;bitmap<br />
+  &nbsp;&nbsp;blocks<br />
+  &nbsp;&nbsp;boxtype<br />
+  &nbsp;&nbsp;browser<br />
+  &nbsp;&nbsp;button<br />
+  &nbsp;&nbsp;buttons<br />
+  &nbsp;&nbsp;checkers <br />
+  &nbsp;&nbsp;clock <br />
+  &nbsp;&nbsp;colbrowser<br />
+  &nbsp;&nbsp;cube <br />
+  &nbsp;&nbsp;CubeView<br />
+  &nbsp;&nbsp;cursor <br />
+  &nbsp;&nbsp;curve<br />
+  &nbsp;&nbsp;demo<br />
+  &nbsp;&nbsp;doublebuffer<br />
+  &nbsp;&nbsp;editor<br />
+  &nbsp;&nbsp;fast_slow<br />
+  &nbsp;&nbsp;file_chooser<br />
+  &nbsp;&nbsp;fonts<br />
+  &nbsp;&nbsp;forms<br />
+  &nbsp;&nbsp;fractals<br />
+  &nbsp;&nbsp;fullscreen<br />
+  &nbsp;&nbsp;gl_overlay<br />
+  &nbsp;&nbsp;glpuzzle<br />
+  &nbsp;&nbsp;hello<br />
+  &nbsp; help<br />
+          </span></td>
+          <td width="105"><span class="style21">&nbsp; iconize<br />
+  &nbsp; image<br />
+   &nbsp;&nbsp;inactive<br />
+  &nbsp;&nbsp;input<br />
+  &nbsp;&nbsp;input_choice<br />
+  &nbsp;&nbsp;keyboard <br />
+  &nbsp;&nbsp;label <br />
+  &nbsp;&nbsp;line_style<br />
+  &nbsp;&nbsp;mandelbrot<br />
+  &nbsp; minimum <br />
+  &nbsp; navigation <br />
+  &nbsp; output<br />
+  &nbsp;&nbsp;overlay<br />
+  &nbsp; pack<br />
+  &nbsp; pixmap<br />
+  &nbsp; preferences<br />
+  &nbsp; radio<br />
+  &nbsp;&nbsp;resize<br />
+  &nbsp; resizebox<br />
+  &nbsp;    scroll <br />
+  &nbsp;&nbsp;shape <br />
+  &nbsp;    subwindow<br />
+  &nbsp;&nbsp;sudoku <br />
+  &nbsp;    symbols<br />
+  &nbsp;    tabs <br />
+  &nbsp;&nbsp;threads <br />
+  &nbsp;&nbsp;tile<br />
+  &nbsp;&nbsp;tiled_image<br />
+  &nbsp;    valuators</span></td>
+        </tr>
+          </table> 
+      Note that the 
+    &quot;PRJ&quot; files found with each program are project files for the Quincy IDE that also supports FLTK</div>
+<h2 class="style22">  Load the &quot;Cubeview&quot;project 
+  with Code::Blocks </h2>
+<p>-The cubeview program is used to demonstrate how to generate a whole FLTK program using the FLUID User Interface Builder.</p>
+    <p align="center"><img src="../../../pics/cubeview.gif" alt="Cubeview screen" width="317" height="327" /><br />
+    Cubeview rotates a cube in 3 dimensions using mouse controls. </p>
+    <p align="left">Build the project with Code::Blocks and run it. </p>
+    <h2 class="style22">Studying  the &quot;CubeView&quot; project </h2>
+    <p> The FLTK documentation offers a <a href="../../../programmerHelp/fltk/fltk-1.3.0rc3-doc/fluid.html">tutorial dedicated to the construction of Cubeview</a>. 
+    <br />
+    This tutorial will show you how the graphical interface can be fully generated using the FLUID GUI tool, available from the Code::Blocks-EP &quot;Tools&quot; menu.</p>
+    <hr />
+    <p>You can now load the other FLTK examples and create FLTK projects that will enable you to build them. With some of them you may need to add one or more of the extra FLTK libraries: <em>fltk_forms</em>, <em>fltk_gl</em>, <em>fltk_images</em>, <em>fltk_jpeg</em>, <em>fltk_png</em> and <em>fltk_z</em>.</p>
+    <p>      You will need to refer frequently to the FLTK API documentation. You can reach it from the Code::Blocks &quot;Programmer's Help&quot; menu entry, or by following <strong><a href="../../../programmerHelp/fltk/intro.htm">this link</a>:</strong><br />
+    </p>
+  </div>
+  <div id="footer">
+    <div align="center" class="style10"><span class="style20"> Modified: 18 February 2011</span> </div>
+  </div>
+</div>
+</body>
+</html>
